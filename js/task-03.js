@@ -13,5 +13,5 @@ const images = [
   },
 ];
 const galleryList = document.querySelector("ul");
-const animalsList = images.map(({ url, alt }) => `<img class="hw-imgs" alt=${alt} src=${url}>`);
+const animalsList = images.map(({ url, alt }) => `<img class="hw-imgs" alt=${alt} src=${url}>`).join("");
 galleryList.insertAdjacentHTML("afterbegin", animalsList);
